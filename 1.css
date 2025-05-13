@@ -1,0 +1,144 @@
+button {
+    background-color: rgb(240, 97, 15); /* Cor de fundo verde */
+    color: white; /* Texto branco */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Removendo a borda */
+    cursor: pointer; /* Cursor de mão */
+    transition: background-color 0.3s; /* Transição suave para mudança de cor */
+}
+
+/* Efeito hover no botão */
+button:hover {
+    background-color: rgb(133, 79, 18); /* Cor de fundo verde escuro */
+}
+
+/* Estilo da caixa (Exercício 2) */
+.caixa {
+    width: 300px; /* Largura da caixa */
+    height: 100px; /* Altura da caixa */
+    border: 2px solid black; /* Borda preta */
+    padding: 20px; /* Espaçamento interno */
+    margin: 30px; /* Margem externa */
+}
+
+/* Estilo do cartão de perfil (Exercício 3) */
+.card {
+    background-color: white; /* Fundo branco */
+    border: 2px solid lightgray; /* Borda cinza clara */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centralizando o texto */
+    width: 200px; /* Largura do cartão */
+    margin: 20px auto; /* Centralizando na tela */
+}
+
+.card button {
+    background-color:  rgb(240, 97, 15); /* Cor suave de fundo */
+    color: white; /* Texto branco */
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Removendo borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão */
+    transition: background-color 0.3s; /* Transição suave para o hover */
+}
+
+.card button:hover {
+    background-color: rgb(138, 60, 14); /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Menu de navegação (Exercício 4) */
+.menu {
+    display: flex; /* Flexbox para alinhamento em linha */
+    justify-content: space-around; /* Espaço igual entre os links */
+    background-color: #333; /* Cor de fundo do menu */
+    padding: 10px; /* Espaçamento interno */
+}
+
+.menu a {
+    color: white; /* Texto branco */
+    text-decoration: none; /* Removendo o sublinhado */
+    padding: 10px; /* Espaçamento interno */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.menu a:hover {
+    background-color: #555; /* Cor ao passar o mouse */
+}
+
+/* Formulário (Exercício 5) */
+.formulario {
+    display: grid; /* Usando Grid */
+    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
+    gap: 30px; /* Espaçamento entre campos */
+    max-width: 500px; /* Largura máxima */
+    margin: 0 auto; /* Centralizando o formulário */
+}
+
+.formulario input {
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda leve */
+    border-radius: 5px; /* Bordas arredondadas */
+    width: 100%; /* Ocupando toda a largura */
+}
+
+.formulario button {
+    grid-column: span 2; /* Botão ocupa ambas as colunas */
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color:  rgb(240, 97, 15); /* Cor de fundo verde */
+    color: white; /* Texto branco */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.formulario button:hover {
+    background-color:  rgb(126, 63, 27); /* Cor de fundo do botão no hover */
+}
+
+/* Lista com ícones personalizados (Exercício 6) */
+.lista-tarefas {
+    list-style-type: none; /* Removendo as bolinhas padrão */
+    padding: 0; /* Removendo o padding */
+}
+
+.lista-tarefas li::before {
+    content: "✓"; /* Símbolo de check */
+    color:  rgb(240, 97, 15); /* Cor do ícone */
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Tabela estilizada (Exercício 7) */
+.tabela-notas {
+    width: 100%; /* Ocupa toda a largura */
+    border-collapse: collapse; /* Unindo as bordas */
+}
+
+.tabela-notas th {
+    background-color: lightgray; /* Fundo cinza claro */
+    text-align: center; /* Centralizando texto */
+    padding: 10px; /* Espaçamento interno */
+}
+
+.tabela-notas td {
+    text-align: center; /* Alinhando texto ao centro */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ddd; /* Borda fina */
+}
+
+.tabela-notas tr:hover {
+    background-color: #f2f2f2; /* Mudando cor da linha ao passar o mouse */
+}
+
+/* Estilos de modo claro e escuro (Exercício 9) */
+.modo-claro {
+    background-color: rgb(247, 198, 108); /* Fundo branco */
+    color: black; /* Texto preto */
+}
+
+.modo-escuro {
+    background-color: black; /* Fundo preto */
+    color: rgb(0, 0, 0); /* Texto branco */
+}

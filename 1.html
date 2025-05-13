@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
+    <title>Desafios de CSS</title>
+</head>
+<body class="modo-claro">
+
+   <!-- Exercício 4: Menu de navegação (movido para o topo) -->
+   <nav class="menu">
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
+    <a href="#">Serviços</a>
+    <a href="#">Contato</a>
+</nav>
+
+<!-- Exercício 1: Botão estilizado -->
+<button>Clique aqui</button>
+
+<!-- Exercício 2: Caixa com bordas e margens -->
+<div class="caixa">
+    Conteúdo da caixa
+</div>
+
+<!-- Exercício 3: Cartão de perfil -->
+<div class="card">
+    <h2>Mario Oliveiro</h2>
+    <p>Desenvolvedor Front-end</p>
+    <button>Seguir</button>
+</div>
+
+<!-- Exercício 5: Formulário com duas colunas -->
+<form class="formulario">
+    <input type="text" placeholder="Nome">
+    <input type="email" placeholder="Email">
+    <input type="text" placeholder="Telefone">
+    <input type="text" placeholder="Cidade">
+    <button>Enviar</button>
+</form>
+
+<!-- Exercício 6: Lista com ícones -->
+<ul class="lista-tarefas">
+    <li>Estudar CSS</li>
+    <li>Praticar exercícios</li>
+    <li>Fazer um projeto</li>
+</ul>
+
+<!-- Exercício 7: Tabela estilizada -->
+<table class="tabela-notas">
+    <thead>
+        <tr>
+            <th>Aluno</th>
+            <th>Nota</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Ana</td>
+            <td>9.5</td>
+        </tr>
+        <tr>
+            <td>Bruno</td>
+            <td>8.0</td>
+        </tr>
+        <tr>
+            <td>Clara</td>
+            <td>7.8</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Exercício 9: Alterar tema da página -->
+<h1>Bem-vindo!</h1>
+<button id="modoClaro">Modo Claro</button>
+<button id="modoEscuro">Modo Escuro</button>
+
+<script>
+    // Função para mudar entre os temas claro e escuro
+    const modoClaro = document.getElementById('modoClaro');
+    const modoEscuro = document.getElementById('modoEscuro');
+
+    modoClaro.addEventListener('click', () => {
+        document.body.classList.remove('modo-escuro');
+        document.body.classList.add('modo-claro');
+    });
+
+    modoEscuro.addEventListener('click', () => {
+        document.body.classList.remove('modo-claro');
+        document.body.classList.add('modo-escuro');
+    });
+</script>
+
+</body>
+</html>
